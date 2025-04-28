@@ -1,21 +1,9 @@
 import { useNavigate } from "react-router";
+import buttons from "../const";
 
 const Campfire = () => {
   let navigate = useNavigate();
-  const buttons = [
-    "Woodcutting",
-    "Fishing",
-    "Fletching",
-    "Mining",
-    "Smithing",
-    "Cooking",
-    "Combat",
-    "Shops",
-    "Inventory",
-    "Chat",
-    "Equipment",
-    "Magic",
-  ];
+
   return (
     <>
       <h1>Campfire</h1>
@@ -23,11 +11,12 @@ const Campfire = () => {
         {buttons.map((btn) => {
           return (
             <button
+              key={btn.path}
               onClick={() => {
-                navigate(`/${btn}`);
+                navigate(`/${btn.path}`);
               }}
             >
-              {btn}
+              {btn.label}
             </button>
           );
         })}

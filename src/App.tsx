@@ -4,14 +4,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Campfire from "./components/Campfire";
 import { Routes, Route } from "react-router";
-import Woodcuting from "./components/Woodcutting";
+import Woodcutting from "./components/Woodcutting";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Campfire />} />
-        <Route path="Woodcutting" element={<Woodcuting />} />
+        <Route path="woodcutting" element={<Woodcutting />} />
       </Routes>
     </>
   );

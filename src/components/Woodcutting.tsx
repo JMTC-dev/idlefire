@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 
-const Woodcuting = () => {
+const Woodcutting = () => {
   let navigate = useNavigate();
   return (
     <>
@@ -16,4 +16,4 @@ const Woodcuting = () => {
   );
 };
 
-export default Woodcuting;
+export default Woodcutting;
